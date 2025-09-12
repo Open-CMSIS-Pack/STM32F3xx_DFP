@@ -16,6 +16,9 @@
     <release version="3.0.1-dev">
       Active development ...
       Updated debug configuration files
+      Package Description (pdsc):
+      - Shortened device family description
+      - Added Ddsp processor attribute
     </release>
     <release version="2.2.2" date="2022-02-01">
       Updated Pack to STM32Cube_FW_F3 Firmware Package version V1.11.3:
@@ -149,20 +152,12 @@
 
   <devices>
     <family Dfamily="STM32F3 Series" Dvendor="STMicroelectronics:13">
-      <processor Dcore="Cortex-M4" DcoreVersion="r0p1" Dfpu="1" Dmpu="1" Dendian="Little-endian"/>
+      <processor Dcore="Cortex-M4" DcoreVersion="r0p1" Dfpu="1" Dmpu="1" Dendian="Little-endian" Ddsp="DSP"/>
 
       <book name="https://developer.arm.com/documentation/dui0553/latest" title="Cortex-M4 Generic User Guide"/>
 
       <description>
-        STMicroelectronics' STM32F3 family offers an extensive range of enhanced I/Os and peripherals connected to two APB buses.
-
-        - SRAM with HW parity checking
-        - Timer with quadrature (incremental) encoder input
-        - Timer with deadtime generation and emergency stop
-        - 5 V-tolerant I/Os
-        - Rail-to-rail analog comparators
-        - Operational amplifiers
-        - 96-bit unique ID
+High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS at 72 MHz.
       </description>
 
       <sequences>
