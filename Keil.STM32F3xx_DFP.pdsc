@@ -16,6 +16,9 @@
     <release version="3.0.1-dev">
       Active development ...
       Updated debug configuration files
+      Updated Templates:
+      - Added DWARF-5 debug information
+      - Added generated output files
       Package Description (pdsc):
       - Corrected SRAM memory sizes
       - Added CCM RAM memory regions (STM32F303/STM32F3x4)
