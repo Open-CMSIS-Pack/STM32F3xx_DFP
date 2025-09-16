@@ -17,6 +17,8 @@
       Active development ...
       Updated debug configuration files
       Package Description (pdsc):
+      - Corrected SRAM memory sizes
+      - Added CCM RAM memory regions (STM32F303/STM32F3x4)
       - Shortened device family description
       - Added Ddsp processor attribute
     </release>
@@ -565,7 +567,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -635,7 +637,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -705,7 +707,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -790,7 +792,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -869,7 +871,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00020000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00006000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -907,7 +909,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x0000A000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -945,7 +947,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1021,7 +1023,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1096,7 +1098,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00020000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00006000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1135,7 +1137,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x0000A000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1246,7 +1248,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           <compile  define="STM32F302xC"/>
           <debug svd="CMSIS/SVD/STM32F302.svd"/>
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00020000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00006000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1280,7 +1282,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           <compile  define="STM32F302xC"/>
           <debug svd="CMSIS/SVD/STM32F302.svd"/>
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00008000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x0000A000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1482,8 +1484,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00008000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1519,8 +1522,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1558,7 +1562,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
 
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00020000" default="1" startup="1"/>
           <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1596,8 +1600,8 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000C000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1635,7 +1639,8 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1674,8 +1679,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1714,8 +1720,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00008000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1751,8 +1758,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1790,7 +1798,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
 
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00020000" default="1" startup="1"/>
           <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1829,8 +1837,8 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000C000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1869,7 +1877,8 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00060000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00060000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1907,8 +1916,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available, not enough pins"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00080000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00080000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00080000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1942,7 +1952,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00020000" default="1" startup="1"/>
           <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00020000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -1976,8 +1986,8 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           <compile define="STM32F303xC"/>
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
           <memory name="Flash"   access="rx"              start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000C000" default="1"/>
-          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x0000A000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00002000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2013,8 +2023,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
         <device Dname="STM32F303VD">
           <compile define="STM32F303xE"/>
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00060000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00060000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00060000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2050,8 +2061,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
         <device Dname="STM32F303VE">
           <compile define="STM32F303xE"/>
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00080000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00080000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00080000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2089,8 +2101,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
         <device Dname="STM32F303ZD">
           <compile define="STM32F303xE"/>
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00060000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00060000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00060000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2123,8 +2136,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
         <device Dname="STM32F303ZE">
           <compile define="STM32F303xE"/>
           <debug svd="CMSIS/SVD/STM32F303.svd"/>
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00080000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00080000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00010000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00004000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_512.FLM" start="0x08000000" size="0x00080000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2521,8 +2535,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00004000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00004000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00004000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2555,8 +2570,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00008000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2590,8 +2606,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2648,11 +2665,14 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           <feature type="Temp"          n="-40"     m="1055"/>
 
           <variant Dvariant="STM32F334K4Tx">
-            <memory name="SRAM" access="rwx"              start="0x20000000" size="0x00004000" default="1"/>
+            <memory name="SRAM"    access="rwx"           start="0x20000000" size="0x00003000" default="1"/>
+            <memory name="CCM_RAM" access="rwx"           start="0x10000000" size="0x00001000" default="0"/>
+
             <feature type="QFP" n="32"/>
           </variant>
           <variant Dvariant="STM32F334K4Ux">
-            <memory name="SRAM" access="rwx"              start="0x20000000" size="0x00003000" default="1"/>
+            <memory name="SRAM"    access="rwx"           start="0x20000000" size="0x00003000" default="1"/>
+            <memory name="CCM_RAM" access="rwx"           start="0x10000000" size="0x00001000" default="0"/>
 
             <feature type="QFN" n="32"/>
           </variant>
@@ -2667,8 +2687,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00008000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2705,8 +2726,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2743,8 +2765,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00008000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00008000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00008000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2778,8 +2801,9 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
             <sequence name="DisableTraceTPIU" info="ETM not available"> </sequence>
           </sequences>
 
-          <memory name="Flash" access="rx"                start="0x08000000" size="0x00010000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x00004000" default="1"/>
+          <memory name="Flash"   access="rx"              start="0x08000000" size="0x00010000" default="1" startup="1"/>
+          <memory name="SRAM"    access="rwx"             start="0x20000000" size="0x00003000" default="1"/>
+          <memory name="CCM_RAM" access="rwx"             start="0x10000000" size="0x00001000" default="0"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00010000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
@@ -2988,7 +3012,7 @@ High-performance STM32F3 MCUs with Arm Cortex-M4 core, MPU, DSP, FPU, 90 DMIPS a
           </sequences>
 
           <memory name="Flash" access="rx"                start="0x08000000" size="0x00040000" default="1" startup="1"/>
-          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x0000A000" default="1"/>
+          <memory name="SRAM"  access="rwx"               start="0x20000000" size="0x0000C000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_256.FLM" start="0x08000000" size="0x00040000" default="1"/>
           <algorithm name="CMSIS/Flash/STM32F3xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
 
